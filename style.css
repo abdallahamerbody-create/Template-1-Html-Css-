@@ -1,0 +1,142 @@
+:root {
+    --back: #0a0c1b;
+    --card: #1c1938;
+    --photo: #63357FB3;
+    --word: #9d5bca;
+    --p: #69677f;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--back);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--card);
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 25%;
+    bottom: 25%;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+h2 {
+    padding-left: 0px;
+}
+
+.card .write {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 50px;
+}
+
+.card .write::selection {
+    background-color: white;
+    color: var(--word);
+}
+
+.deff {
+    color: var(--word);
+}
+
+.deff::selection {
+    background-color: var(--word);
+    color: white;
+}
+
+h2 {
+    padding-top: 50px;
+    font-size: 30px;
+}
+
+.numbers {
+    padding-top: 90px;
+    padding-right: 45px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.dis {
+    padding-top: 20px;
+    color: var(--p);
+    font-size: 15px;
+}
+
+.companies {
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    padding-right: 60px;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: var(--photo);
+    margin-left: 460px;
+    border-radius: 5px;
+}
+
+img {
+    border-radius: 5px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    text-align: center;
+    background-color: var(--card);
+    color: var(--word);
+    padding: 15px;
+
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover {
+    color: var(--p);
+}
+
+a:visited {
+    color: var(--word);
+}
+
+.foot {
+    font-weight: bolder;
+    color: var(--p);
+}
+
+.foot::selection {
+    background-color: white;
+    color: var(--word);
+}
+
+footer::selection {
+    background-color: white;
+    color: var(--card);
+}
+
+a::selection {
+    background-color: white;
+    color: var(--word);
+}
